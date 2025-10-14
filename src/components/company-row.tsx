@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
-import { Status } from './status-label';
+import StatusLabel, { Status } from './status-label';
 
 export interface CompanyRowProps {
   id: number;
@@ -38,11 +38,14 @@ export default function CompanyRow({
         <a href={`companies/${id}`}>{company}</a>
       </td>
       <td>
+        <StatusLabel status={status}>{labelByStatus[status]}</StatusLabel>
+      </td>
+      <td>
         <div className="inline-flex items-center gap-1">
           <Image
             width={16}
             height={16}
-            src={`icons/${promotion ? 'check' : 'x-mark'}.svg`}
+            src={`/icons/${promotion ? 'check' : 'x-mark'}.svg`}
             alt="promotion icon"
           />
           <span
