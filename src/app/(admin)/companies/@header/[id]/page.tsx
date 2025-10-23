@@ -1,3 +1,4 @@
+import Header from '@/app/components/header';
 import React from 'react';
 
 export interface PageProps {
@@ -5,9 +6,5 @@ export interface PageProps {
 }
 
 export default function Page({ params }: PageProps) {
-  return (
-    <div className="py-6 px-10">
-      <p>{`Information about company (${params.id})`}</p>
-    </div>
-  );
+  return <Header>{`Company (${params.id})`}</Header>;
 }

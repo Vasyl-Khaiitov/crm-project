@@ -25,7 +25,7 @@ export default function LogoUploader({
           className="mb-1"
           width={48}
           height={48}
-          src="icons/cloud-arrow-down.svg"
+          src="/icons/cloud-arrow-down.svg"
           alt="upload"
         />
 

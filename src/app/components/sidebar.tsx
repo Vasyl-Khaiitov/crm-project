@@ -28,7 +28,7 @@ export default function Sidebar({}: SidebarProps) {
           <SidebarItem
             current={pathname === '/dashboard'}
             pathname="/dashboard"
-            src="icons/squares-2x2.svg"
+            src="/icons/squares-2x2.svg"
             alt="dashboard icon"
           >
             Dashboard
