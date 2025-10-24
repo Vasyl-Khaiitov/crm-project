@@ -1,5 +1,5 @@
 export interface SummaryStats {
-  promotion: number;
+  promotions: number;
   categories: number;
   newCompanies: number;
   activeCompanies: number;
